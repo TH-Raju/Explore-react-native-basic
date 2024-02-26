@@ -79,16 +79,17 @@ export default function App() {
           incididunt ut labore et dolore magna aliqua.
         </Text> */}
       </ScrollView>
-      <NewComponent />
+      <NewComponent title="Properties" />
     </View>
   );
 }
 // Create new component
 
-function NewComponent() {
+function NewComponent(props) {
+  const { title } = props;
   return (
     <View>
-      <Text>New component</Text>
+      <Text>New component {title}</Text>
     </View>
   );
 }
