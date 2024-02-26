@@ -1,7 +1,16 @@
 import { StatusBar } from "expo-status-bar";
-import { Image, ScrollView, StyleSheet, Text, View } from "react-native";
+import { useState } from "react";
+import {
+  Button,
+  Image,
+  ScrollView,
+  StyleSheet,
+  Text,
+  View,
+} from "react-native";
 
 export default function App() {
+  const [name, setName] = useState("THR");
   return (
     <View style={styles.container}>
       <ScrollView>
@@ -14,6 +23,13 @@ export default function App() {
           source={require("./assets/1656036010178.jpg")}
           style={{ height: 200, width: 200 }}
         />
+        <Text>{name}</Text>
+        <Button
+          title="Full Name"
+          onPress={() => {
+            setName("Tofajjol Hosen Raju");
+          }}
+        />
         {/* remote image  */}
         {/* When use URI must be specified height and width */}
         <Image
@@ -22,7 +38,7 @@ export default function App() {
           }}
           style={{ height: 200, width: 200 }}
         />
-        <Text style={{ fontWeight: "bold" }}>
+        {/* <Text style={{ fontWeight: "bold" }}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem
           ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -61,7 +77,7 @@ export default function App() {
           tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor
           sit amet, consectetur adipiscing elit, sed do eiusmod tempor
           incididunt ut labore et dolore magna aliqua.
-        </Text>
+        </Text> */}
       </ScrollView>
       <NewComponent />
     </View>
