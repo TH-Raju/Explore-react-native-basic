@@ -63,6 +63,16 @@ export default function App() {
           incididunt ut labore et dolore magna aliqua.
         </Text>
       </ScrollView>
+      <NewComponent />
+    </View>
+  );
+}
+// Create new component
+
+function NewComponent() {
+  return (
+    <View>
+      <Text>New component</Text>
     </View>
   );
 }
