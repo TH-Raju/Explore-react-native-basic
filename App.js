@@ -79,6 +79,8 @@ export default function App() {
           incididunt ut labore et dolore magna aliqua.
         </Text> */}
       </ScrollView>
+      {/* reusability */}
+      <NewComponent title="Properties" />
       <NewComponent title="Properties" />
     </View>
   );
