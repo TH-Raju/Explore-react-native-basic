@@ -26,7 +26,7 @@ const styles = StyleSheet.create({
     flex: 1,
     padding: 20,
     paddingTop: 40,
-    flexDirection: "row", // row column
+    flexDirection: "column", // row column
     // justifyContent: "space-between", // justify content works for the main axis
     alignItems: "flex-end", // center row and column  flex-end flex-start
   },
@@ -37,6 +37,7 @@ const styles = StyleSheet.create({
     height: 50,
     width: 50,
     backgroundColor: "yellow",
+    alignSelf: "flex-start",
   },
   box2: {
     height: 50,
@@ -47,5 +48,6 @@ const styles = StyleSheet.create({
     height: 50,
     width: 50,
     backgroundColor: "purple",
+    alignSelf: "center",
   },
 });
