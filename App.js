@@ -23,24 +23,29 @@ export default function App() {
 
 const styles = StyleSheet.create({
   container: {
-    height: 200,
-    width: 300,
+    flex: 1,
     padding: 20,
     paddingTop: 40,
+    flexDirection: "row", // row column
+    // justifyContent: "space-between", // justify content works for the main axis
+    alignItems: "flex-end", // center row and column  flex-end flex-start
   },
   box: {
-    height: 150,
-    width: 150,
     backgroundColor: "red",
   },
   box1: {
+    height: 50,
+    width: 50,
     backgroundColor: "yellow",
   },
   box2: {
+    height: 50,
+    width: 50,
     backgroundColor: "green",
   },
   box3: {
+    height: 50,
+    width: 50,
     backgroundColor: "purple",
-    width: 300,
   },
 });
