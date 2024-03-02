@@ -14,9 +14,9 @@ export default function App() {
       >
         Hello
       </Text>
-      <View style={styles.box1} />
-      <View style={styles.box2} />
-      <View style={styles.box3} />
+      <View style={[styles.box, styles.box1]} />
+      <View style={[styles.box, styles.box2]} />
+      <View style={[styles.box, styles.box3]} />
     </View>
   );
 }
@@ -28,19 +28,19 @@ const styles = StyleSheet.create({
     padding: 20,
     paddingTop: 40,
   },
+  box: {
+    height: 150,
+    width: 150,
+    backgroundColor: "red",
+  },
   box1: {
-    height: 50,
-    width: 50,
     backgroundColor: "yellow",
   },
   box2: {
-    height: 50,
-    width: 50,
     backgroundColor: "green",
   },
   box3: {
-    height: 50,
-    width: 50,
     backgroundColor: "purple",
+    width: 300,
   },
 });
